@@ -63,22 +63,24 @@ struct HTTPResponse<T>: Decodable where T: Decodable {
             do {
                 // or Int
                 let resultInt = try container.decode(Int.self, forKey: .result)
-                if acceptableTrueInt ~= resultInt {
+                switch resultInt {
+                case acceptableTrueInt:
                     self.result = true
-                } else if acceptableFalseInt ~= resultInt {
-                 self.result = false
-                } else {
+                case acceptableFalseInt:
+                    self.result = false
+                default:
                     throw DecodeError.unexpectedResultType
                 }
             } catch {
                 do {
                     // or String
                     let resultString = try container.decode(String.self, forKey: .result).lowercased()
-                    if acceptableTrueStrings.contains(resultString) {
-                        self.result = true
-                    } else if acceptableFalseStrings.contains(resultString) {
+                    switch resultString {
+                    case acceptableFalseStrings:
                         self.result = false
-                    } else {
+                    case acceptableTrueStrings:
+                        self.result = true
+                    default:
                         throw DecodeError.unexpectedResultType
                     }
                 } catch {

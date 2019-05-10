@@ -27,6 +27,7 @@
 		719207CA22859877000F86C2 /* DefaultObjectResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 719207BE22859877000F86C2 /* DefaultObjectResponse.json */; };
 		719207CB22859877000F86C2 /* UnexpectedObjectResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 719207BF22859877000F86C2 /* UnexpectedObjectResponse.json */; };
 		719207CD2285A67F000F86C2 /* SuccesResultWithEmptyPayload.json in Resources */ = {isa = PBXBuildFile; fileRef = 719207CC2285A67F000F86C2 /* SuccesResultWithEmptyPayload.json */; };
+		719207CF2285B02E000F86C2 /* Array+PatternMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719207CE2285B02E000F86C2 /* Array+PatternMatching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		719207BE22859877000F86C2 /* DefaultObjectResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultObjectResponse.json; sourceTree = "<group>"; };
 		719207BF22859877000F86C2 /* UnexpectedObjectResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UnexpectedObjectResponse.json; sourceTree = "<group>"; };
 		719207CC2285A67F000F86C2 /* SuccesResultWithEmptyPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SuccesResultWithEmptyPayload.json; sourceTree = "<group>"; };
+		719207CE2285B02E000F86C2 /* Array+PatternMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+PatternMatching.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				719207A822859816000F86C2 /* Model */,
 				7192078E228597B8000F86C2 /* HTTPResponseParser.h */,
 				7192078F228597B8000F86C2 /* Info.plist */,
+				719207CE2285B02E000F86C2 /* Array+PatternMatching.swift */,
 			);
 			path = HTTPResponseParser;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				719207AC22859816000F86C2 /* Parser.swift in Sources */,
 				719207AD22859816000F86C2 /* ErrorDescription.swift in Sources */,
 				719207AE22859816000F86C2 /* ObjectReponse.swift in Sources */,
+				719207CF2285B02E000F86C2 /* Array+PatternMatching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
