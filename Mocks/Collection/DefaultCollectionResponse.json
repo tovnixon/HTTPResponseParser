@@ -1,0 +1,17 @@
+{
+    "result":1,
+    "payload":{
+        "users":[
+            {
+                "name":"Fransis",
+                "isAvailable":true,
+                "lastActivity":1523083201
+            },
+            {
+                "name":"Nicola",
+                "isAvailable":false,
+                "lastActivity":1526083200
+            }
+        ]
+    }
+}
